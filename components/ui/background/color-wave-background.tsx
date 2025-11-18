@@ -25,7 +25,7 @@ export function CloudFusionBackground({ light, dark }: CloudFusionBackgroundProp
   const colors = theme === "dark" ? dark : light
 
   return (
-    <div className="absolute inset-0 -z-10 overflow-hidden">
+    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
       <div
         className="cloud cloud-1"
         style={{
