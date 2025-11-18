@@ -127,3 +127,42 @@
     @apply bg-background text-foreground;
   }
 }
+
+.cloud {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  opacity: 0.45;
+  mix-blend-mode: screen;
+}
+
+/* Animaciones suaves como nubes */
+@keyframes cloudMove1 {
+  0%   { transform: translate(-75%, -5%) scale(1.1); }
+  50%  { transform: translate(10%, 5%) scale(1.15); }
+  100% { transform: translate(-75%, -5%) scale(1.1); }
+}
+
+@keyframes cloudMove2 {
+  0%   { transform: translate(25%, -10%) scale(1.2); }
+  50%  { transform: translate(-5%, 10%) scale(1.22); }
+  100% { transform: translate(25%, -10%) scale(1.2); }
+}
+
+@keyframes cloudMove3 {
+  0%   { transform: translate(-40%, 8%) scale(1.3); }
+  50%  { transform: translate(8%, -8%) scale(1.28); }
+  100% { transform: translate(-40%, 8%) scale(1.3); }
+}
+
+.cloud-1 {
+  animation: cloudMove1 25s ease-in-out infinite;
+}
+
+.cloud-2 {
+  animation: cloudMove2 10s ease-in-out infinite;
+}
+
+.cloud-3 {
+  animation: cloudMove3 20s ease-in-out infinite;
+}
