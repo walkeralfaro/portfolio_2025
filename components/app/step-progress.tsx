@@ -1,0 +1,34 @@
+import { Step } from "@/hooks/useSteps"
+import { Button } from "../ui/button"
+
+interface StepProgressProps {
+  steps: Step[]
+  currentStep: number
+  onStepClick: (stepIndex: number) => void
+  disabled?: boolean
+}
+
+export default function StepProgress({ steps, currentStep, onStepClick, disabled }: StepProgressProps) {
+
+  return (
+    <div className="flex justify-between">
+
+      {
+        steps.map((step, index) => (
+          <div key={step.title}>
+            <Button
+              type="button"
+              disabled={disabled}
+              onClick={() => onStepClick(index)}
+              className={`${currentStep !== index && 'bg-secondary hover:bg-secondary text-foreground'} cursor-pointer hover:-translate-y-1 p-8 shadow-md/20`}
+            >
+              {step.title}
+            </Button>
+
+          </div>
+        ))
+      }
+
+    </div>
+  )
+}
