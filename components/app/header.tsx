@@ -8,7 +8,7 @@ export default function Header() {
       <nav className="container mx-auto max-w-7xl p-3">
         <div className="flex justify-between items-center">
           <Link href='/' className="text-3xl md:text-4xl font-bold">Walker Alfaro</Link>
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center">
             <SocialLinks />
             <ThemeToggle />
           </div>

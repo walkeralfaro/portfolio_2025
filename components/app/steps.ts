@@ -3,7 +3,7 @@ import { Step } from "@/hooks/useSteps";
 export const Steps: Step[] = [
   {
     title: 'About',
-    description: 'Introduce my self',
+    description: 'Introduce myself',
     disabled: false
   },
   {

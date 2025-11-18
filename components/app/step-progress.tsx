@@ -11,7 +11,7 @@ interface StepProgressProps {
 export default function StepProgress({ steps, currentStep, onStepClick, disabled }: StepProgressProps) {
 
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between md:justify-start md:gap-4">
 
       {
         steps.map((step, index) => (
@@ -20,7 +20,7 @@ export default function StepProgress({ steps, currentStep, onStepClick, disabled
               type="button"
               disabled={disabled}
               onClick={() => onStepClick(index)}
-              className={`${currentStep !== index && 'bg-secondary hover:bg-secondary text-foreground'} cursor-pointer hover:-translate-y-1 p-8 shadow-md/20`}
+              className={`${currentStep !== index && 'bg-secondary hover:bg-secondary text-foreground'} cursor-pointer transition-transform duration-200 hover:-translate-y-1 p-8 shadow-md/20`}
             >
               {step.title}
             </Button>

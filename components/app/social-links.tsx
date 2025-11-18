@@ -8,45 +8,88 @@ export default function SocialLinks() {
 
     <div className="flex items-center">
 
-      <DropdownMenu>
-        <DropdownMenuTrigger><PanelRightOpen /></DropdownMenuTrigger>
-        <DropdownMenuContent side="left" align="center" className="flex justify-between">
-          <Link href="#" className="p-2">
-            <Linkedin className="w-8 h-8" />
-          </Link>
 
-          
-          <Link href="#" className="p-2">
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <Github className="w-8 h-8" />
-              </TooltipTrigger>
-              <TooltipContent>
-                <p>Github</p>
-              </TooltipContent>
-            </Tooltip>
-          </Link>
+      <div className="flex md:hidden">
+        <DropdownMenu>
+          <DropdownMenuTrigger><PanelRightOpen /></DropdownMenuTrigger>
+          <DropdownMenuContent side="left" align="start" className="flex justify-between">
+
+            <Link href="#" className="p-2">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Linkedin className="w-8 h-8" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>LinkedIn</p>
+                </TooltipContent>
+              </Tooltip>
+            </Link>
 
 
-          <Link href="#" className="p-2">
-            <DiamondPercent className="w-8 h-8" />
-          </Link>
-        </DropdownMenuContent>
-      </DropdownMenu>
+            <Link href="#" className="p-2">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Github className="w-8 h-8" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>Github</p>
+                </TooltipContent>
+              </Tooltip>
+            </Link>
 
-      {/* <Tooltip>
-        <TooltipTrigger asChild>
-          <Button variant="outline">Hover</Button>
-        </TooltipTrigger>
-        <TooltipContent>
-          <p>Github</p>
-        </TooltipContent>
-      </Tooltip> */}
+
+            <Link href="#" className="p-2">
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <DiamondPercent className="w-8 h-8" />
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>FrontendMentor</p>
+                </TooltipContent>
+              </Tooltip>
+            </Link>
+
+          </DropdownMenuContent>
+        </DropdownMenu>
+      </div>
+
+
 
       <div className="hidden md:flex gap-2 items-center">
-        <Link href='#'><Linkedin className="w-11 h-11" /></Link>
-        <Link href='#'><Github /></Link>
-        <Link href='#'><Github /></Link>
+        <Link href="#" className="p-2">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Linkedin className="w-8 h-8" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>LinkedIn</p>
+            </TooltipContent>
+          </Tooltip>
+        </Link>
+
+
+        <Link href="#" className="p-2">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <Github className="w-8 h-8" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>Github</p>
+            </TooltipContent>
+          </Tooltip>
+        </Link>
+
+
+        <Link href="#" className="p-2">
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <DiamondPercent className="w-8 h-8" />
+            </TooltipTrigger>
+            <TooltipContent>
+              <p>FrontendMentor</p>
+            </TooltipContent>
+          </Tooltip>
+        </Link>
       </div>
     </div>
   )

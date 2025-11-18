@@ -1,19 +1,17 @@
 'use client'
 
+import { useMemo } from "react"
 import { useSteps } from "@/hooks/useSteps"
 import { Steps } from "./steps"
 import StepProgress from "./step-progress"
-import { useMemo } from "react"
 import About from "../pages/about"
 import Projects from "../pages/projects"
 import Contact from "../pages/contact"
 
 export default function MainSection() {
-
   const { currentStep, handleStepClick, steps } = useSteps(Steps)
 
   const renderStep = useMemo(() => {
-
     switch (currentStep) {
       case 0:
         return <About />
@@ -24,22 +22,19 @@ export default function MainSection() {
       default:
         return null
     }
-
   }, [currentStep])
 
   return (
-    <div className="container mx-auto max-w-7xl p-3 font-inter">
+    <>
+      <div className="container mx-auto max-w-7xl p-3 font-inter">
+        <div className="">
+          <StepProgress currentStep={currentStep} onStepClick={handleStepClick} steps={steps} />
+        </div>
 
-      <div>
-        <StepProgress currentStep={currentStep} onStepClick={handleStepClick} steps={steps} />
-
+        <div className="bg-secondary/95 h-[500] rounded-2xl mt-4 p-6 shadow-md/20">
+          {renderStep}
+        </div>
       </div>
-
-      <div className="bg-secondary h-[500] rounded-2xl mt-4 p-6 shadow-md/20">
-        {renderStep}
-      </div>
-
-
-    </div>
+    </>
   )
 }
