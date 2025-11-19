@@ -5,7 +5,7 @@ import { useSteps } from "@/hooks/useSteps"
 import { Steps } from "./steps"
 import StepProgress from "./step-progress"
 import About from "../pages/about"
-import Projects from "../pages/projects"
+import Projects from "../pages/projects/projects"
 import Contact from "../pages/contact"
 
 export default function MainSection() {
@@ -27,12 +27,15 @@ export default function MainSection() {
   return (
     <>
       <div className="container mx-auto max-w-7xl p-3 font-inter">
-        <div className="">
-          <StepProgress currentStep={currentStep} onStepClick={handleStepClick} steps={steps} />
-        </div>
 
-        <div className="bg-secondary/95 h-[500] rounded-2xl mt-4 p-6 shadow-md/20">
-          {renderStep}
+        <div className="flex flex-col gap-4 md:mt-12 md:flex-row md:gap-8">
+          <div>
+            <StepProgress currentStep={currentStep} onStepClick={handleStepClick} steps={steps} />
+          </div>
+
+          <div className="bg-secondary h-[500] md:h-[600] rounded-2xl shadow-md/20 grow">
+            {renderStep}
+          </div>
         </div>
       </div>
     </>

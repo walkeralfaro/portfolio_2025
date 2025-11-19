@@ -16,7 +16,7 @@ const geo = Geo({
 })
 
 export const metadata: Metadata = {
-  title: "Walker Alfaro Portfolio",
+  title: "Walker Alfaro - Portfolio",
   description: "Portfolio designed and developed by Walker Alfaro",
 };
 
