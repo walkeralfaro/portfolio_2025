@@ -8,8 +8,8 @@ import Image from "next/image";
 
 export default function ProjectsChallenges() {
   return (
-    <ScrollArea className="h-100">
-      <div className="flex flex-wrap gap-6 px-4 md:p-6">
+    <ScrollArea className="h-[440] md:h-[540]">
+      <div className="flex flex-wrap gap-7 px-4 md:p-6">
         {
           projects.challenges.map(challenge => {
 
@@ -17,27 +17,14 @@ export default function ProjectsChallenges() {
               <Dialog key={challenge.title}>
                 <DialogTrigger asChild className="gap-4 md:gap-6">
                   <Card
-                    className="bg-muted py-8 pt-0 w-34 h-44 cursor-pointer shadow-md hover:scale-105 hover:shadow-xl duration-300 overflow-hidden md:w-44 md:h-56"
+                    className="bg-muted py-8 pt-0 w-36 h-44 cursor-pointer shadow-md hover:scale-105 hover:shadow-xl duration-300 overflow-hidden md:w-44 md:h-56"
                   >
-                    {/* <div className="w-full h-[200px]">
-                      <img
-                        src={challenge.imageUrl}
-                        alt={challenge.imageAlt}
-                        className="w-full h-full object-cover"
-                      />
-                    </div> */}
 
-                    <div className="relative w-full h-[200px] overflow-hidden rounded-t-lg">
-                      <Image
-                        src={challenge.imageSmallUrl}
-                        alt={challenge.imageAlt}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 768px) 100vw, 176px"
-                        priority={false}
-                      />
-                    </div>
-
+                    <img
+                      src={challenge.imageSmallUrl}
+                      alt={challenge.imageAlt}
+                      className="w-full h-full object-cover"
+                    />
 
                     <CardContent className="px-4 text-sm md:text-base">
                       {challenge.title}
