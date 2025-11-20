@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
-import { Geo, Inter } from "next/font/google";
+import { Candal, Chango, DM_Sans, Geo, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import { Toaster } from "@/components/ui/sonner";
+
+// Titles fonts
+const candal = Candal({
+  variable: "--font-candal",
+  weight: ["400"],
+  subsets: ["latin"]
+})
 
 // Body fonts
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"]
-})
-
-// Titles fonts
-const geo = Geo({
-  variable: "--font-geo",
-  weight: ['400']
 })
 
 export const metadata: Metadata = {
@@ -28,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${geo.variable} antialiased`}
+        className={`${inter.variable} ${candal.variable} antialiased`}
       >
         <ThemeProvider
           attribute="class"
@@ -38,6 +40,7 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
+        <Toaster richColors  />
       </body>
     </html>
   );

@@ -33,7 +33,7 @@ export default function MainSection() {
             <StepProgress currentStep={currentStep} onStepClick={handleStepClick} steps={steps} />
           </div>
 
-          <div className="bg-secondary h-[500] md:h-[600] rounded-2xl shadow-md/20 grow">
+          <div className="bg-secondary h-[540] md:h-[650] rounded-2xl shadow-md/20 grow">
             {renderStep}
           </div>
         </div>

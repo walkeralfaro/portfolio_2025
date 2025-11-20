@@ -5,6 +5,7 @@ export const projects = {
       description:
         "A fully responsive country explorer built with Next.js. It consumes the REST Countries API to display detailed information for every nation. Users can filter by name or region, switch themes, and browse a clean, accessible UI designed for clarity and performance.",
       imageUrl: "/projects/challenges/rest-countries.webp",
+      imageSmallUrl: "/projects/challenges/rest-countries_small.webp",
       imageAlt: "Desktop screenshot of the REST Countries Explorer built with Next.js",
       screenshots: [],
       technologies: [
@@ -21,6 +22,7 @@ export const projects = {
       description:
         "A modern weather dashboard powered by the Open-Meteo and Geocoding APIs. It provides real-time conditions, hourly forecasts, and daily summaries with smooth UI interactions. State management is handled with Zustand, ensuring fast and predictable updates.",
       imageUrl: "/projects/challenges/weather.webp",
+      imageSmallUrl: "/projects/challenges/weather_small.webp",
       imageAlt: "Desktop screenshot of the Weather Dashboard built with Next.js",
       screenshots: [],
       technologies: [
@@ -38,6 +40,7 @@ export const projects = {
       description:
         "A modern weather dashboard powered by the Open-Meteo and Geocoding APIs. It provides real-time conditions, hourly forecasts, and daily summaries with smooth UI interactions. State management is handled with Zustand, ensuring fast and predictable updates.",
       imageUrl: "/projects/challenges/weather.webp",
+      imageSmallUrl: "/projects/challenges/weather_small.webp",
       imageAlt: "Desktop screenshot of the Weather Dashboard built with Next.js",
       screenshots: [],
       technologies: [
@@ -55,6 +58,7 @@ export const projects = {
       description:
         "A modern weather dashboard powered by the Open-Meteo and Geocoding APIs. It provides real-time conditions, hourly forecasts, and daily summaries with smooth UI interactions. State management is handled with Zustand, ensuring fast and predictable updates.",
       imageUrl: "/projects/challenges/weather.webp",
+      imageSmallUrl: "/projects/challenges/weather_small.webp",
       imageAlt: "Desktop screenshot of the Weather Dashboard built with Next.js",
       screenshots: [],
       technologies: [
@@ -72,6 +76,7 @@ export const projects = {
       description:
         "A modern weather dashboard powered by the Open-Meteo and Geocoding APIs. It provides real-time conditions, hourly forecasts, and daily summaries with smooth UI interactions. State management is handled with Zustand, ensuring fast and predictable updates.",
       imageUrl: "/projects/challenges/weather.webp",
+      imageSmallUrl: "/projects/challenges/weather_small.webp",
       imageAlt: "Desktop screenshot of the Weather Dashboard built with Next.js",
       screenshots: [],
       technologies: [
@@ -89,6 +94,7 @@ export const projects = {
       description:
         "A modern weather dashboard powered by the Open-Meteo and Geocoding APIs. It provides real-time conditions, hourly forecasts, and daily summaries with smooth UI interactions. State management is handled with Zustand, ensuring fast and predictable updates.",
       imageUrl: "/projects/challenges/weather.webp",
+      imageSmallUrl: "/projects/challenges/weather_small.webp",
       imageAlt: "Desktop screenshot of the Weather Dashboard built with Next.js",
       screenshots: [],
       technologies: [
