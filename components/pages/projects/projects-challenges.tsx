@@ -39,11 +39,14 @@ export default function ProjectsChallenges() {
                       {challenge.description}
                     </DialogDescription>
                   </DialogHeader>
-                  <div className="">
-                    <img
+                  <div className="md:w-[462px] relative aspect-[400/250]">
+                    <Image
                       src={challenge.imageUrl}
                       alt={challenge.imageAlt}
-                      className="w-full h-full object-cover"
+                      fill
+                      className="object-cover rounded-lg"
+                      sizes="462px"
+                      priority={false}
                     />
                   </div>
                   <div className="mt-1 mb-3">
