@@ -36,7 +36,7 @@ export const EmailTemplate = ({
           <Container className="mx-auto py-5 pb-12 w-[580px] max-w-full">
             <Section className='mb-8'>
               <Img
-                src={`https://avatars.githubusercontent.com/u/98902569`}
+                src={`https://www.walkeralfaro.com/icons/walogo.png`}
                 width="60"
                 height="60"
                 alt="Walker Alfaro Logo"
@@ -63,7 +63,7 @@ export const EmailTemplate = ({
             <Section>
               <Row>
                 <Hr className="border-[#cccccc] my-5" />
-                <Text className="text-[#9ca299] text-[13px] leading-[24px] mb-2.5">
+                <Text className="text-[#9ca299] text-[13px] leading-6 mb-2.5">
                   © {new Date().getFullYear()} Walker Alfaro — All rights
                   reserved.
                 </Text>
