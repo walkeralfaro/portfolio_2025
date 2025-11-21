@@ -68,7 +68,7 @@ export default function Contact() {
     <div className="h-full flex flex-col items-start justify-center p-4">
       <div className="w-full max-w-lg mx-auto">
         <form onSubmit={form.handleSubmit(onSubmit)}>
-          <FieldGroup>
+          <FieldGroup className="gap-1">
 
             <div className="flex gap-4">
               {/* NAME */}
@@ -85,14 +85,14 @@ export default function Contact() {
                       autoComplete="off"
                       aria-invalid={fieldState.invalid}
                     />
-                    {fieldState.error && (
-                      <div className="absolute left-0 -bottom-5">
+                    <div className="h-5">
+                      {fieldState.error && (
                         <FieldError
                           errors={[fieldState.error]}
-                          className=" text-destructive"
+                          className="text-destructive text-sm"
                         />
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </Field>
                 )}
               />
@@ -112,14 +112,14 @@ export default function Contact() {
                       aria-invalid={fieldState.invalid}
                     />
 
-                    {fieldState.error && (
-                      <div className="absolute left-0 -bottom-5">
+                    <div className="h-5">
+                      {fieldState.error && (
                         <FieldError
                           errors={[fieldState.error]}
-                          className=" text-destructive"
+                          className="text-destructive text-sm"
                         />
-                      </div>
-                    )}
+                      )}
+                    </div>
                   </Field>
                 )}
               />
@@ -139,14 +139,14 @@ export default function Contact() {
                     autoComplete="off"
                     aria-invalid={fieldState.invalid}
                   />
-                  {fieldState.error && (
-                    <div className="absolute left-0 -bottom-5">
+                  <div className="h-5">
+                    {fieldState.error && (
                       <FieldError
                         errors={[fieldState.error]}
-                        className=" text-destructive"
+                        className="text-destructive text-sm"
                       />
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </Field>
               )}
             />
@@ -174,14 +174,14 @@ export default function Contact() {
                     Max 200 characters. Be as specific as possible.
                   </FieldDescription>
 
-                  {fieldState.error && (
-                    <div className="absolute left-0 -bottom-5">
+                  <div className="h-5">
+                    {fieldState.error && (
                       <FieldError
                         errors={[fieldState.error]}
-                        className=" text-destructive"
+                        className="text-destructive text-sm"
                       />
-                    </div>
-                  )}
+                    )}
+                  </div>
                 </Field>
               )}
             />
