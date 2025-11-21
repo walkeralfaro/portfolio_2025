@@ -38,7 +38,7 @@ export default function ProjectsTemplate({ projects }: ProjectsTemplateProps) {
                     className="bg-muted py-8 pt-0 w-36 h-44 cursor-pointer shadow-md hover:scale-105 hover:shadow-xl duration-300 overflow-hidden md:w-44 md:h-56"
                   >
 
-                    <div className="w-full h-[86] relative overflow-hidden">
+                    <div className="w-full h-[86] relative overflow-hidden md:h-[120]">
                       <Image
                         src={project.imageSmallUrl}
                         alt={project.imageAlt}
