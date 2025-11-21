@@ -14,6 +14,16 @@ export default function SocialLinks() {
             <SheetTitle></SheetTitle>
             <SheetDescription></SheetDescription>
             <div className="flex justify-center gap-4 items-center py-6">
+
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <Link href='https://2023.walkeralfaro.com/' className=" text-white p-1 px-2 rounded bg-chart-3" target="_blank">2023</Link>
+                </TooltipTrigger>
+                <TooltipContent>
+                  Portfolio 2023's version
+                </TooltipContent>
+              </Tooltip>
+
               <Link href="https://www.linkedin.com/in/walkeralfaro" target="_blank" className="p-2">
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -52,7 +62,7 @@ export default function SocialLinks() {
       </div>
 
       <div className="hidden md:flex gap-2 items-center">
-        <Link href="https://www.linkedin.com/in/walkeralfaro"  target="_blank" className="p-2">
+        <Link href="https://www.linkedin.com/in/walkeralfaro" target="_blank" className="p-2">
           <Tooltip>
             <TooltipTrigger asChild>
               <Linkedin className="w-8 h-8" />

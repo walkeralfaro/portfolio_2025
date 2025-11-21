@@ -53,7 +53,7 @@ export default function ProjectsTemplate({ projects }: ProjectsTemplateProps) {
                     </CardContent>
                   </Card>
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="md:gap-8">
                   <DialogHeader className="gap-4">
                     <DialogTitle>{project.title}</DialogTitle>
 
