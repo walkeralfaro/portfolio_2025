@@ -25,9 +25,8 @@ export async function sendContactEmail(prevState: any, formData: FormData) {
 
   try {
     const { error } = await resend.emails.send({
-      from: "Contacto Portfolio <contacto@walkeralfaro.com>",
+      from: "Walker Alfaro - page <contacto@walkeralfaro.com>",
       to: "contact.walkeralfaro@gmail.com",
-      replyTo: email,
       cc: email,
       subject,
       react: EmailTemplate({ name, email, message }),

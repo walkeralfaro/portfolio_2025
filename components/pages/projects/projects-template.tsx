@@ -35,7 +35,7 @@ export default function ProjectsTemplate({ projects }: ProjectsTemplateProps) {
               <Dialog key={project.title}>
                 <DialogTrigger asChild className="gap-4 md:gap-6">
                   <Card
-                    className="bg-muted py-8 pt-0 w-36 h-44 cursor-pointer shadow-md hover:scale-105 hover:shadow-xl duration-300 overflow-hidden md:w-44 md:h-56"
+                    className="bg-muted py-8 pt-0 w-36 h-44 cursor-pointer border-0 shadow-md hover:scale-105 hover:shadow-xl duration-300 overflow-hidden md:w-44 md:h-56"
                   >
 
                     <div className="w-full h-[86] relative overflow-hidden md:h-[120]">
