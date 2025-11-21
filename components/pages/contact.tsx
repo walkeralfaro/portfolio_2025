@@ -36,8 +36,6 @@ export default function Contact() {
 
   const [state, action] = useActionState(sendContactEmail, initialState)
 
-  console.log(state)
-
   useEffect(() => {
     if (state.success) {
       toast.success("Email sending!", {

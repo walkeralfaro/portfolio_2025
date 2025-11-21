@@ -1,16 +1,11 @@
-import type { Metadata } from "next";
-import { Candal, Chango, DM_Sans, Geo, Inter, Ramabhadra } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "@/components/theme/theme-provider";
-import { Toaster } from "@/components/ui/sonner";
+import type { Metadata } from "next"
+import { Inter, Ramabhadra } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme/theme-provider"
+import { Toaster } from "@/components/ui/sonner"
+import { CloudFusionBackground, } from "@/components/ui/background/color-wave-background"
 
 // Titles fonts
-const candal = Candal({
-  variable: "--font-candal",
-  weight: ["400"],
-  subsets: ["latin"]
-})
-
 const ramabhadra = Ramabhadra({
   variable: "--font-ramabhadra",
   weight: ["400"],
@@ -26,18 +21,22 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Walker Alfaro - Portfolio",
   description: "Portfolio designed and developed by Walker Alfaro",
-};
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${candal.variable} ${ramabhadra.variable} antialiased`}
+        className={`${inter.variable} ${ramabhadra.variable} antialiased`}
       >
+        <CloudFusionBackground
+          light={["#a78bfa", "#f472b6", "#60fae5"]}
+          dark={["#6366f1", "#a855f7", "#14b8a6"]}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -46,8 +45,8 @@ export default function RootLayout({
         >
           {children}
         </ThemeProvider>
-        <Toaster richColors  />
+        <Toaster richColors />
       </body>
     </html>
-  );
+  )
 }
