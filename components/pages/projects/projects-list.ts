@@ -76,8 +76,8 @@ export const projects = {
       title: "Decryptor",
       description:
         "Project for the Alura Challenge - Text Decoder, built with a mobile-first approach following the Figma design. It encrypts and decrypts text using predefined rules, validates input with regex, supports clipboard copying, and features a fully responsive interface. It applies clean HTML structure, array-based logic, and best practices in JavaScript and CSS.",
-      imageUrl: "/projects/demos/decryptor.webp",
-      imageSmallUrl: "/projects/demos/decryptor_small.webp",
+      imageUrl: "/projects/challenges/decryptor.webp",
+      imageSmallUrl: "/projects/challenges/decryptor_small.webp",
       imageAlt: "Desktop screenshot of the Decryptor",
       screenshots: [],
       technologies: [
