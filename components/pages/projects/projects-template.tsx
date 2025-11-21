@@ -27,7 +27,7 @@ type ProjectsTemplateProps = {
 
 export default function ProjectsTemplate({ projects }: ProjectsTemplateProps) {
   return (
-    <ScrollArea className="h-[440] md:h-[540]">
+    <ScrollArea className="h-[520] md:h-[540]">
       <div className="flex flex-wrap gap-7 px-4 md:p-6">
         {
           projects.map(project => {
