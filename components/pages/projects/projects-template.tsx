@@ -1,5 +1,4 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { projects } from "./projects-list";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { SquareArrowOutUpRight } from "lucide-react";
@@ -39,11 +38,13 @@ export default function ProjectsTemplate({ projects }: ProjectsTemplateProps) {
                     className="bg-muted py-8 pt-0 w-36 h-44 cursor-pointer shadow-md hover:scale-105 hover:shadow-xl duration-300 overflow-hidden md:w-44 md:h-56"
                   >
 
-                    <div className="w-full aspect-[1.6] overflow-hidden rounded-t-lg">
-                      <img
+                    <div className="w-full h-[86] relative overflow-hidden">
+                      <Image
                         src={project.imageSmallUrl}
                         alt={project.imageAlt}
-                        className="w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        priority
                       />
                     </div>
 
@@ -67,7 +68,7 @@ export default function ProjectsTemplate({ projects }: ProjectsTemplateProps) {
                       fill
                       className="object-cover rounded-lg"
                       sizes="462px"
-                      priority={false}
+                      priority
                     />
                   </div>
                   <div className="mt-1 mb-3">
@@ -77,9 +78,19 @@ export default function ProjectsTemplate({ projects }: ProjectsTemplateProps) {
                         project.technologies.map((technology, index) => (
                           <Tooltip key={technology.id}>
                             <TooltipTrigger asChild>
+
                               <div className="w-10 h-10 p-2 rounded-md bg-muted">
-                                <img src={`/icons/${technology.icon}`} alt={technology.id} />
+                                <div className="relative w-full h-full">
+                                  <Image
+                                    src={`/icons/${technology.icon}`}
+                                    alt={technology.id}
+                                    fill
+                                    className="object-contain"
+                                    priority
+                                  />
+                                </div>
                               </div>
+                              
                             </TooltipTrigger>
                             <TooltipContent>
                               <p>{technology.label}</p>
