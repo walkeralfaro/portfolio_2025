@@ -1,5 +1,6 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../ui/tabs";
-import ProjectsChallenges from "./projects-challenges";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../ui/tabs"
+import ProjectsTemplate from "./projects-template"
+import {projects} from "./projects-list"
 
 export default function Projects() {
   return (
@@ -13,15 +14,15 @@ export default function Projects() {
       </div>
 
       <TabsContent value="challenges">
-        <ProjectsChallenges />
-
+        <ProjectsTemplate projects={projects.challenges} />
       </TabsContent>
 
       <TabsContent value="demos">
-
+        <ProjectsTemplate projects={projects.demos} />
       </TabsContent>
-      <TabsContent value="games">
 
+      <TabsContent value="games">
+        <ProjectsTemplate projects={projects.games} />
       </TabsContent>
     </Tabs>
   )

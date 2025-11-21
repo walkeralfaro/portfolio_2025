@@ -14,7 +14,7 @@ export default function MainSection() {
   const renderStep = useMemo(() => {
     switch (currentStep) {
       case 0:
-        return <About />
+        return <About onChangeStep={handleStepClick} />
       case 1:
         return <Projects />
       case 2:
@@ -28,12 +28,12 @@ export default function MainSection() {
     <>
       <div className="container mx-auto max-w-7xl p-3 font-inter">
 
-        <div className="flex flex-col gap-4 md:mt-12 md:flex-row md:gap-8">
+        <div className="flex flex-col gap-4 md:my-12 md:flex-row md:gap-8">
           <div>
             <StepProgress currentStep={currentStep} onStepClick={handleStepClick} steps={steps} />
           </div>
 
-          <div className="bg-secondary h-[540] md:h-[650] rounded-2xl shadow-md/20 grow">
+          <div className="bg-secondary h-[640] md:h-[650] rounded-2xl shadow-md/20 grow">
             {renderStep}
           </div>
         </div>

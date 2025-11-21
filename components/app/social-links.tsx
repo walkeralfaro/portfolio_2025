@@ -14,7 +14,7 @@ export default function SocialLinks() {
             <SheetTitle></SheetTitle>
             <SheetDescription></SheetDescription>
             <div className="flex justify-center gap-4 items-center py-6">
-              <Link href="#" className="p-2">
+              <Link href="https://www.linkedin.com/in/walkeralfaro" target="_blank" className="p-2">
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Linkedin className="w-8 h-8" />
@@ -25,7 +25,7 @@ export default function SocialLinks() {
                 </Tooltip>
               </Link>
 
-              <Link href="#" className="p-2">
+              <Link href="https://github.com/walkeralfaro" target="_blank" className="p-2">
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Github className="w-8 h-8" />
@@ -36,7 +36,7 @@ export default function SocialLinks() {
                 </Tooltip>
               </Link>
 
-              <Link href="#" className="p-2">
+              <Link href="https://www.frontendmentor.io/profile/walkeralfaro" target="_blank" className="p-2">
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <DiamondPercent className="w-8 h-8" />
@@ -52,7 +52,7 @@ export default function SocialLinks() {
       </div>
 
       <div className="hidden md:flex gap-2 items-center">
-        <Link href="#" className="p-2">
+        <Link href="https://www.linkedin.com/in/walkeralfaro"  target="_blank" className="p-2">
           <Tooltip>
             <TooltipTrigger asChild>
               <Linkedin className="w-8 h-8" />
@@ -64,7 +64,7 @@ export default function SocialLinks() {
         </Link>
 
 
-        <Link href="#" className="p-2">
+        <Link href="https://github.com/walkeralfaro" target="_blank" className="p-2">
           <Tooltip>
             <TooltipTrigger asChild>
               <Github className="w-8 h-8" />
@@ -76,7 +76,7 @@ export default function SocialLinks() {
         </Link>
 
 
-        <Link href="#" className="p-2">
+        <Link href="https://www.frontendmentor.io/profile/walkeralfaro" target="_blank" className="p-2">
           <Tooltip>
             <TooltipTrigger asChild>
               <DiamondPercent className="w-8 h-8" />
